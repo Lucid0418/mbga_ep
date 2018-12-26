@@ -7,8 +7,7 @@
 	<meta http-equiv="expires" content="-1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Tales of Cinderia</title>
-	<link rel="stylesheet" type="text/css" href="http://125.6.169.35/idolmaster/css/rich/new_mypage_common.css" media="all">
-	<link rel="apple-touch-icon-precomposed" href="http://125.6.169.35/idolmaster/image_sp/ui/icon_bookmark.png">
+	<link rel="stylesheet" type="text/css" href="/12008305/css/rich/new_mypage_common.css" media="all">
 	<script type="text/javascript">
 		if (window.localStorage) {
 			var displaySet = localStorage.getItem('DisplayPositionSet');
@@ -30,235 +29,99 @@
 		}
 	</script>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<script src="http://125.6.169.35/idolmaster/js/jquery-2.2.2.min.js"></script>
-	<script src="http://125.6.169.35/idolmaster/js/underscore-min.js"></script>
-	<script src="http://125.6.169.35/idolmaster/js/require.js"></script>
-	<script src="http://125.6.169.35/idolmaster/js/common.js"></script>
-	<script src="http://125.6.169.35/idolmaster/js/common_new.js"></script>
-	<link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css">
+	<script src="/12008305/js/jquery-2.2.2.min.js"></script>
+	<script src="/12008305/js/underscore-min.js"></script>
+	<script src="/12008305/js/require.js"></script>
+	<script src="/12008305/js/common.js"></script>
+	<script src="/12008305/js/common_new.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/base.css">
 </head>
 <body id="memory" class="detail">
 	<div id="top" class="page_container jsOnBtn">
-
-		<input id="delay" type="hidden" value="0">
-		<style type="text/css">
-			.comments {
-				min-height: 115px;
-				text-align: left;
-				color: #1d1d1d;
-				padding: 25px 20px 10px;
-				position: relative;
-				top: -50px;
-			}
-
-			.comments.cute {
-				background: url('http://125.6.169.35/idolmaster/image_sp/ui/event_memory/cute_comment.png?v=20170809174629') center top no-repeat;
-				background-size: 300px;
-			}
-
-			.comments.cool {
-				background: url('http://125.6.169.35/idolmaster/image_sp/ui/event_memory/cool_comment.png?v=20170809174629') center top no-repeat;
-				background-size: 300px;
-			}
-
-			.comments.passion {
-				background: url('http://125.6.169.35/idolmaster/image_sp/ui/event_memory/passion_comment.png?v=20170809174632') center top no-repeat;
-				background-size: 300px;
-			}
-
-			.icon_navi {
-				width: auto;
-				margin: 0 13px;
-				padding: 8px 0;
-				background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 130, from(#222), to(#333));
-				-webkit-border-radius: 6px;
-			}
-
-			.cover {
-				height: 370px;
-			}
-
-			.exBox {
-				width: 320px;
-				margin: 0 auto;
-				text-align: center;
-			}
-
-			a.inline {
-				width: 300px;
-				height: 70px;
-				color: #1d1d1d;
-				display: block;
-				margin: 0 auto 10px;
-			}
-
-			.exArea {
-				width: 260px;
-				margin: 10px auto 0;
-				padding: 0;
-				border: 2px solid #b4d5f4;
-				background: #1d1d1d;
-				z-index: 10;
-				color: #ffffff;
-				line-height: 140%;
-				-webkit-border-radius: 8px;
-			}
-
-			.exArea h3 {
-				background: #17285c;
-				-webkit-border-top-left-radius: 8px;
-				-webkit-border-top-right-radius: 8px;
-				padding: 10px 0;
-			}
-
-			.check_close_btn {
-				top: -10px;
-				width: 37px;
-				height: 37px;
-				right: 20px;
-				display: block;
-			}
-
-			.m-12px {
-				margin-top: -12px;
-			}
-
-			.appear_idol_area .appear_idol_bg {
-				position: relative;
-				width: 320px;
-			}
-
-			.appear_idol_area .appear_idol_chara {
-				position: absolute;
-				top: -15px;
-				left: 0;
-				z-index: 1;
-				width: 320px;
-			}
-
-			.appear_idol_area .appear_idol_title_area {
-				position: absolute;
-				top: 4px;
-				left: 0px;
-				z-index: 2;
-				width: 320px;
-				height: 36px;
-			}
-
-			.appear_idol_area .appear_idol_title_bg {
-				position: relative;
-				background-image: url('http://125.6.169.35/idolmaster/image_sp/ui/event_memory/appear_idol_title_bg.png?v=20180910144657');
-				background-size: 320px;
-				background-repeat: no-repeat;
-				display: table-cell;
-				height: inherit;
-				vertical-align: middle;
-				color: transparent;
-				padding-left: 34px;
-				-webkit-mask-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
-			}
-
-			.appear_idol_area .appear_idol_title_text {
-				position: relative;
-				top: 2px;
-				display: table-cell;
-				height: inherit;
-				vertical-align: middle;
-				color: #1d1d1d;
-				padding-left: 34px;
-				text-shadow: 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff, 0px 0px 3px #ffffff;
-			}
-
-			.appear_idol_area .appear_idol_title_text._line_2 {
-				top: -1px;
-				font-size: 12px;
-			}
-		</style>
 		<header style="margin:0 0 5px;">
-			<h1 style="margin:0 0 10px;"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_event.jpg" width="100%" alt="진실의 강함이 모여드는 공연<br>테일즈 오브 신데리아" class="m-12px"></h1>
+			<h1 style="margin:0 0 10px;"><img src="/12008305/image_sp/event/1914/img/top_event.jpg" width="100%" alt="진실의 강함이 모여드는 공연<br>테일즈 오브 신데리아" class="m-12px"></h1>
 			<div class="titleH2" style="margin:0 auto; padding:5px; line-height:110%;"><span class="blue">개최기간</span><br>2018/12/10 ～ 2018/12/18</div>
-		</header><img src="http://125.6.169.35/idolmaster/image_sp/ui/line_hoshi.jpg" width="100%"><br>
-		<section class="naviArea"><img src="http://125.6.169.35/idolmaster/image_sp/ui/navi/tujo_m2.png" width="90">
+		</header><img src="/12008305/image_sp/ui/line_hoshi.jpg" width="100%"><br>
+		<section class="naviArea"><img src="/12008305/image_sp/ui/navi/tujo_m2.png" width="90">
 			<div class="Wrap">
-				<div class="fukiRight">テイルズ オブ ザ レイズとのコラボ公演! 変わり果てたトーキョーを舞台に、衝突を繰り返しながら真実の強さを獲得していく加蓮ちゃんたち。みんなの強い絆に胸を打たれましたね!<br></div>
+				<div class="fukiRight">테일즈 오브 더 레이즈와의 콜라보 공연! 변해버리고 만 도쿄를 무대로 , 衝突を繰り返しながら真実の強さを獲得していく加蓮ちゃんたち。みんなの強い絆に胸を打たれましたね!<br></div>
 			</div>
 		</section><br>
-		<link rel="stylesheet" type="text/css" href="http://125.6.169.35/idolmaster/css/rich/memory.css?v=20170809173113" media="all">
-		<link rel="stylesheet" type="text/css" href="http://125.6.169.35/idolmaster/css/rich/event_carnival.css?v=20181029144432" media="all">
-
+		<!--<link rel="stylesheet" type="text/css" href="/12008305/css/rich/memory.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/12008305/css/rich/event_carnival.css" media="all">-->
 		<section class="t-Cnt area_story_collection_tab" style="display: block;">
 			<div class="area_tab t-Cnt">
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/event_story_inline_detail/1914/0?story_id=1&l_frm=Memory_detail_1&rnd=340075957" class="js_btn_stage story_base story_st1 jsOnDesignBtn" data-id="1" style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_button_base_1.jpg);background-size:280px;width:280px;height:44px;">
+				<a href="https://lucid0418.github.io/mbga_ep/event/1914/01" class="js_btn_stage story_base story_st1 jsOnDesignBtn" data-id="1" style="background:url(/12008305/image_sp/event/1914/bg_button_base_1.jpg);background-size:280px;width:280px;height:44px;">
 					<div class="event_story_title">
 						<p>시부야・1</p>
 					</div>
 					<div class="event_story_chara ">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_stage_chara_102.png">
+						<img src="/12008305/image_sp/event/1914/top_stage_chara_102.png">
 					</div>
 					<div class="story_stage_title"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/event_story_inline_detail/1914/0?story_id=2&l_frm=Memory_detail_1&rnd=147528686" class="js_btn_stage story_base story_st2 jsOnDesignBtn" data-id="2" style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_button_base_1.jpg);background-size:280px;width:280px;height:44px;">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/event_story_inline_detail/1914/0?story_id=2&l_frm=Memory_detail_1&rnd=147528686" class="js_btn_stage story_base story_st2 jsOnDesignBtn" data-id="2" style="background:url(/12008305/image_sp/event/1914/bg_button_base_1.jpg);background-size:280px;width:280px;height:44px;">
 					<div class="event_story_title">
 						<p>시부야・2</p>
 					</div>
 					<div class="event_story_chara ">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_stage_chara_202.png">
+						<img src="/12008305/image_sp/event/1914/top_stage_chara_202.png">
 					</div>
 					<div class="story_stage_title"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/event_story_inline_detail/1914/0?story_id=3&l_frm=Memory_detail_1&rnd=378892919" class="js_btn_stage story_base story_st3 jsOnDesignBtn" data-id="3" style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_button_base_2.jpg);background-size:280px;width:280px;height:44px;">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/event_story_inline_detail/1914/0?story_id=3&l_frm=Memory_detail_1&rnd=378892919" class="js_btn_stage story_base story_st3 jsOnDesignBtn" data-id="3" style="background:url(/12008305/image_sp/event/1914/bg_button_base_2.jpg);background-size:280px;width:280px;height:44px;">
 					<div class="event_story_title">
 						<p>하라주쿠・1</p>
 					</div>
 					<div class="event_story_chara ">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_stage_chara_502.png">
+						<img src="/12008305/image_sp/event/1914/top_stage_chara_502.png">
 					</div>
 					<div class="story_stage_title"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/event_story_inline_detail/1914/0?story_id=4&l_frm=Memory_detail_1&rnd=176194366" class="js_btn_stage story_base story_st4 jsOnDesignBtn" data-id="4" style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_button_base_2.jpg);background-size:280px;width:280px;height:44px;">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/event_story_inline_detail/1914/0?story_id=4&l_frm=Memory_detail_1&rnd=176194366" class="js_btn_stage story_base story_st4 jsOnDesignBtn" data-id="4" style="background:url(/12008305/image_sp/event/1914/bg_button_base_2.jpg);background-size:280px;width:280px;height:44px;">
 					<div class="event_story_title">
 						<p>하라주쿠・2</p>
 					</div>
 					<div class="event_story_chara ">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_stage_chara_302.png">
+						<img src="/12008305/image_sp/event/1914/top_stage_chara_302.png">
 					</div>
 					<div class="story_stage_title"></div>
 				</a>
 			</div>
 			<div class="area_tab t-Cnt">
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/event_story_inline_detail/1914/0?story_id=5&l_frm=Memory_detail_1&rnd=817979445" class="js_btn_stage story_base story_st5 jsOnDesignBtn" data-id="5" style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_button_base_3.jpg);background-size:280px;width:280px;height:44px;">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/event_story_inline_detail/1914/0?story_id=5&l_frm=Memory_detail_1&rnd=817979445" class="js_btn_stage story_base story_st5 jsOnDesignBtn" data-id="5" style="background:url(/12008305/image_sp/event/1914/bg_button_base_3.jpg);background-size:280px;width:280px;height:44px;">
 					<div class="event_story_title">
 						<p>이케부쿠로・1</p>
 					</div>
 					<div class="event_story_chara ">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_stage_chara_702.png">
+						<img src="/12008305/image_sp/event/1914/top_stage_chara_702.png">
 					</div>
 					<div class="story_stage_title"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/event_story_inline_detail/1914/0?story_id=6&l_frm=Memory_detail_1&rnd=836165009" class="js_btn_stage story_base story_st6 jsOnDesignBtn" data-id="6" style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_button_base_3.jpg);background-size:280px;width:280px;height:44px;">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/event_story_inline_detail/1914/0?story_id=6&l_frm=Memory_detail_1&rnd=836165009" class="js_btn_stage story_base story_st6 jsOnDesignBtn" data-id="6" style="background:url(/12008305/image_sp/event/1914/bg_button_base_3.jpg);background-size:280px;width:280px;height:44px;">
 					<div class="event_story_title">
 						<p>이케부쿠로・2</p>
 					</div>
 					<div class="event_story_chara ">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_stage_chara_402.png">
+						<img src="/12008305/image_sp/event/1914/top_stage_chara_402.png">
 					</div>
 					<div class="story_stage_title"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/event_story_inline_detail/1914/0?story_id=7&l_frm=Memory_detail_1&rnd=261971549" class="js_btn_stage story_base story_st7 jsOnDesignBtn" data-id="7" style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_button_base_4.jpg);background-size:280px;width:280px;height:44px;">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/event_story_inline_detail/1914/0?story_id=7&l_frm=Memory_detail_1&rnd=261971549" class="js_btn_stage story_base story_st7 jsOnDesignBtn" data-id="7" style="background:url(/12008305/image_sp/event/1914/bg_button_base_4.jpg);background-size:280px;width:280px;height:44px;">
 					<div class="event_story_title">
 						<p>결전의 땅・1</p>
 					</div>
 					<div class="event_story_chara ">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_stage_chara_202.png">
+						<img src="/12008305/image_sp/event/1914/top_stage_chara_202.png">
 					</div>
 					<div class="story_stage_title"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/event_story_inline_detail/1914/0?story_id=8&l_frm=Memory_detail_1&rnd=756592946" class="js_btn_stage story_base story_st8 jsOnDesignBtn" data-id="8" style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_button_base_4.jpg);background-size:280px;width:280px;height:44px;">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/event_story_inline_detail/1914/0?story_id=8&l_frm=Memory_detail_1&rnd=756592946" class="js_btn_stage story_base story_st8 jsOnDesignBtn" data-id="8" style="background:url(/12008305/image_sp/event/1914/bg_button_base_4.jpg);background-size:280px;width:280px;height:44px;">
 					<div class="event_story_title">
 						<p>결전의 땅・2</p>
 					</div>
 					<div class="event_story_chara ">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event/1914/top_stage_chara_102.png">
+						<img src="/12008305/image_sp/event/1914/top_stage_chara_102.png">
 					</div>
 					<div class="story_stage_title"></div>
 				</a>
@@ -297,75 +160,75 @@
 				.unit_collection_blank .event_story_side_lock{
 width: 28px;
 height: 12px;
-background-image: url(http://125.6.169.35/idolmaster/image_sp/event/1914/unit_skit_locked.png);
+background-image: url(/12008305/image_sp/event/1914/unit_skit_locked.png);
 background-size: 28px 12px;
 background-position: 0 0;
 }
 .unit_collection .event_story_side{
 width: 28px;
 height: 12px;
-background-image: url(http://125.6.169.35/idolmaster/image_sp/event/1914/unit_skit.png);
+background-image: url(/12008305/image_sp/event/1914/unit_skit.png);
 background-size: 28px 12px;
 background-position: 0 0;
 }
 </style>
 			<div id="area_tab_1" class="t-Cnt" style="display: block;">
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/1?l_frm=Memory_detail_1&rnd=83905233" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/1?l_frm=Memory_detail_1&rnd=83905233" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>鏡精カーリャ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914010.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914010.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/2?l_frm=Memory_detail_1&rnd=975019135" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/2?l_frm=Memory_detail_1&rnd=975019135" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>マッハアイドルマヒロ、奔る!</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914020.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914020.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/3?l_frm=Memory_detail_1&rnd=692442707" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/3?l_frm=Memory_detail_1&rnd=692442707" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>聖槍の対魔士カリン</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914030.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914030.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/4?l_frm=Memory_detail_1&rnd=859869521" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/4?l_frm=Memory_detail_1&rnd=859869521" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>せいれいのおともだち</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914040.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914040.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/5?l_frm=Memory_detail_1&rnd=765485132" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/5?l_frm=Memory_detail_1&rnd=765485132" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>トーキョー・ウィッチ・バンド</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914050.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914050.png?v=20181210144821">
 					</div>
 					<div class="event_story_clear"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/6?l_frm=Memory_detail_1&rnd=602537272" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/6?l_frm=Memory_detail_1&rnd=602537272" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>拳法使いジュードwith武闘派アイドル</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914060.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914060.png?v=20181210144821">
 					</div>
 					<div class="event_story_clear"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/7?l_frm=Memory_detail_1&rnd=487156046" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/7?l_frm=Memory_detail_1&rnd=487156046" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>勇ましきレディたち</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914070.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914070.png?v=20181210144821">
 					</div>
 					<div class="event_story_side"></div>
 					<div class="event_story_clear"></div>
@@ -374,54 +237,54 @@ background-position: 0 0;
 			<div id="area_tab_2" class="t-Cnt" style="display:none">
 				<div class="unit_collection_blank js_unlock_unit_collection jsOnDesignBtn" data-id="8" data-medal-num="1" data-comment-type="登場">
 				</div>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/9?l_frm=Memory_detail_1&rnd=795902717" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/9?l_frm=Memory_detail_1&rnd=795902717" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>笑々の明星エミ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914120.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914120.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/10?l_frm=Memory_detail_1&rnd=548202916" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/10?l_frm=Memory_detail_1&rnd=548202916" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>アリス・ザ・ヘルメスリネージ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914130.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914130.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/11?l_frm=Memory_detail_1&rnd=557331315" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/11?l_frm=Memory_detail_1&rnd=557331315" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>誓約騎士チアキ&amp;ハルナ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914140.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914140.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/12?l_frm=Memory_detail_1&rnd=724614262" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/12?l_frm=Memory_detail_1&rnd=724614262" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>死神アイゼンwithアイドル海賊団</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914150.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914150.png?v=20181210144821">
 					</div>
 					<div class="event_story_clear"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/13?l_frm=Memory_detail_1&rnd=557327115" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/13?l_frm=Memory_detail_1&rnd=557327115" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>絆の衣・あずさ＆エステル</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914160.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914160.png?v=20181210144821">
 					</div>
 					<div class="event_story_clear"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/14?l_frm=Memory_detail_1&rnd=964559884" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/14?l_frm=Memory_detail_1&rnd=964559884" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>己の正義を貫く者</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914170.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914170.png?v=20181210144821">
 					</div>
 					<div class="event_story_side"></div>
 					<div class="event_story_clear"></div>
@@ -430,53 +293,53 @@ background-position: 0 0;
 			<div id="area_tab_3" class="t-Cnt" style="display:none">
 				<div class="unit_collection_blank js_unlock_unit_collection jsOnDesignBtn" data-id="15" data-medal-num="1" data-comment-type="登場">
 				</div>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/16?l_frm=Memory_detail_1&rnd=208209805" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/16?l_frm=Memory_detail_1&rnd=208209805" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>格闘士アイコ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914220.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914220.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/17?l_frm=Memory_detail_1&rnd=467235467" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/17?l_frm=Memory_detail_1&rnd=467235467" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>救世軍の指導者マーク</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914230.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914230.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/18?l_frm=Memory_detail_1&rnd=105902020" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/18?l_frm=Memory_detail_1&rnd=105902020" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>碩学の君、かく語りき</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914240.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914240.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/19?l_frm=Memory_detail_1&rnd=208320295" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/19?l_frm=Memory_detail_1&rnd=208320295" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>ジェットブラック・ウィングス</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914250.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914250.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/20?l_frm=Memory_detail_1&rnd=525181047" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/20?l_frm=Memory_detail_1&rnd=525181047" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>救世軍の鏡士フィリップ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914260.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914260.png?v=20181210144821">
 					</div>
 					<div class="event_story_clear"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/21?l_frm=Memory_detail_1&rnd=623578703" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/21?l_frm=Memory_detail_1&rnd=623578703" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>心を繋ぐ永遠の友情</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914270.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914270.png?v=20181210144821">
 					</div>
 					<div class="event_story_side"></div>
 					<div class="event_story_clear"></div>
@@ -485,54 +348,54 @@ background-position: 0 0;
 			<div id="area_tab_4" class="t-Cnt" style="display:none">
 				<div class="unit_collection_blank js_unlock_unit_collection jsOnDesignBtn" data-id="22" data-medal-num="1" data-comment-type="登場">
 				</div>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/23?l_frm=Memory_detail_1&rnd=155111610" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/23?l_frm=Memory_detail_1&rnd=155111610" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>蒼空の魔女ミホ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914320.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914320.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/24?l_frm=Memory_detail_1&rnd=416786156" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/24?l_frm=Memory_detail_1&rnd=416786156" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>白氷を司るモノ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914330.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914330.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/25?l_frm=Memory_detail_1&rnd=200354367" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/25?l_frm=Memory_detail_1&rnd=200354367" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>スターアローズ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914340.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914340.png?v=20181210144821">
 					</div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/26?l_frm=Memory_detail_1&rnd=963239022" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/26?l_frm=Memory_detail_1&rnd=963239022" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>帝国将軍ナーザ</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914350.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914350.png?v=20181210144821">
 					</div>
 					<div class="event_story_clear"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/27?l_frm=Memory_detail_1&rnd=756862114" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/27?l_frm=Memory_detail_1&rnd=756862114" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>絆の衣・雪歩＆アニス</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914360.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914360.png?v=20181210144821">
 					</div>
 					<div class="event_story_clear"></div>
 				</a>
-				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/unit_collection_detail/1914/0/28?l_frm=Memory_detail_1&rnd=347883054" class="unit_collection jsOnDesignBtn">
+				<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/unit_collection_detail/1914/0/28?l_frm=Memory_detail_1&rnd=347883054" class="unit_collection jsOnDesignBtn">
 					<div class="event_story_title">
 						<p>時空剣士クレス＆法術士ミント</p>
 					</div>
 					<div class="event_story_chara">
-						<img src="http://125.6.169.35/idolmaster/image_sp/event_flash/1914/unit/1914370.png?v=20181210144821">
+						<img src="/12008305/image_sp/event_flash/1914/unit/1914370.png?v=20181210144821">
 					</div>
 					<div class="event_story_side"></div>
 					<div class="event_story_clear"></div>
@@ -586,7 +449,7 @@ background-position: 0 0;
 					var $target = $("#unlock_unit_collection_box");
 					$target.find(".js_comment_kind").html($(this).data("comment-type"));
 					var unit_id = $(this).data("id");
-					var url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/exchange_unit_collection/1914/0/replace_unit_id/1?l_frm=Memory_detail_1&rnd=342131942".replace(/replace_unit_id/g, unit_id);
+					var url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/exchange_unit_collection/1914/0/replace_unit_id/1?l_frm=Memory_detail_1&rnd=342131942".replace(/replace_unit_id/g, unit_id);
 					$target.find(".form_exchange_unit_collection").attr("action", url);
 					var user_point = 2032;
 					var medal_num = $(this).data("medal-num");
@@ -609,35 +472,35 @@ background-position: 0 0;
 		</section>
 		<section id="robo_collection" class="area_story_collection_tab  m-Btm8" style="display: none;">
 			<div class="m-Btm10" style="margin-left:20px; width:288px;">
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/1/0/0?l_frm=Memory_detail_1&rnd=933056480" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_1_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ミリーナ</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/1/0/0?l_frm=Memory_detail_1&rnd=933056480" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_1_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ミリーナ</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/2/0/0?l_frm=Memory_detail_1&rnd=165862500" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_2_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">コーキス</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/2/0/0?l_frm=Memory_detail_1&rnd=165862500" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_2_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">コーキス</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/3/0/0?l_frm=Memory_detail_1&rnd=178296951" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_3_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ミラ</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/3/0/0?l_frm=Memory_detail_1&rnd=178296951" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_3_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ミラ</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/4/0/0?l_frm=Memory_detail_1&rnd=195028030" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_4_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ベルベット</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/4/0/0?l_frm=Memory_detail_1&rnd=195028030" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_4_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ベルベット</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/5/0/0?l_frm=Memory_detail_1&rnd=922455446" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_5_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ユーリ</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/5/0/0?l_frm=Memory_detail_1&rnd=922455446" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_5_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ユーリ</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/6/0/0?l_frm=Memory_detail_1&rnd=262202185" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_6_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ラピード</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/6/0/0?l_frm=Memory_detail_1&rnd=262202185" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_6_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ラピード</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/7/0/0?l_frm=Memory_detail_1&rnd=170047166" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_7_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">リッド</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/7/0/0?l_frm=Memory_detail_1&rnd=170047166" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_7_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">リッド</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/8/0/0?l_frm=Memory_detail_1&rnd=614898154" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_8_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">メルディ</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/8/0/0?l_frm=Memory_detail_1&rnd=614898154" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_8_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">メルディ</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/9/0/0?l_frm=Memory_detail_1&rnd=122071706" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_9_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px;letter-spacing:-1px">クレス</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/9/0/0?l_frm=Memory_detail_1&rnd=122071706" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_9_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px;letter-spacing:-1px">クレス</span></div>
 					</a></div>
-				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/show_battle_finish/1914/10/0/0?l_frm=Memory_detail_1&rnd=935532298" style="text-decoration:none;height:92px">
-						<div class="btn_select_content t-Cnt"><img src="http://125.6.169.35/idolmaster/image_sp/event/1914/sp/sp_10_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ミント</span></div>
+				<div style="display:inline-block; width:88px; vertical-align:middle; margin-right:8px; margin-bottom:8px; line-height:100%"><a class="btn_select_frame jsOnDesignBtn" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/show_battle_finish/1914/10/0/0?l_frm=Memory_detail_1&rnd=935532298" style="text-decoration:none;height:92px">
+						<div class="btn_select_content t-Cnt"><img src="/12008305/image_sp/event/1914/sp/sp_10_l.png" style="width:72px; margin-bottom:4px;"><br><span style="color:#ffffff;font-size:10px;line-height:100%;letter-spacing:-1px">ミント</span></div>
 					</a></div>
 			</div>
 		</section>
@@ -652,7 +515,7 @@ background-position: 0 0;
 				}).trigger("click");
 			});
 		</script>
-		<script src="http://125.6.169.35/idolmaster/js/ilibrary.js?v=20181127190316" type="text/javascript"></script>
+		<script src="/12008305/js/ilibrary.js?v=20181127190316" type="text/javascript"></script>
 		<script type="text/javascript">
 			$('#story_collection_tab_sub').tab_switch({
 				contents: ".area_tab",
@@ -666,7 +529,7 @@ background-position: 0 0;
 		</script>
 		<br>
 
-		<img src="http://125.6.169.35/idolmaster/image_sp/ui/line_hoshi.jpg?v=20170809174634" width="100%" class="m-Btm8"><br>
+		<img src="/12008305/image_sp/ui/line_hoshi.jpg?v=20170809174634" width="100%" class="m-Btm8"><br>
 		<div class="area-popup_common _hd_blue _bd_black ibox_content" id="intro_box">
 			<a href="#" class="btn-ibox-close icon_close ibox_close jsOnDesignBtn">
 				<div></div>
@@ -678,7 +541,7 @@ background-position: 0 0;
 					</div>
 				</h3>
 				<div class="m-Top8 m-Btm8 t-Cnt">
-					<div style="background:url(http://125.6.169.35/idolmaster/image_sp/event/1914/bg_story.jpg?v=20181207144700)  no-repeat; background-size: 320px 230px; font-size:0.75rem; text-shadow: 0.05rem 0.05rem 1px #000;width:288px;margin:auto;padding:24px 8px;line-height:138%;">
+					<div style="background:url(/12008305/image_sp/event/1914/bg_story.jpg?v=20181207144700)  no-repeat; background-size: 320px 230px; font-size:0.75rem; text-shadow: 0.05rem 0.05rem 1px #000;width:288px;margin:auto;padding:24px 8px;line-height:138%;">
 						今回の公演、舞台は変異した東京!<br>
 						<br>
 						異世界ティル・ナ・ノーグと<br>
@@ -697,10 +560,10 @@ background-position: 0 0;
 				<div class="area-popup_bg_image"></div>
 			</div>
 		</div>
-		<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/memory/index/0/0?keyword=&l_frm=Memory_detail_1&rnd=609227752">
+		<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/memory/index/0/0?keyword=&l_frm=Memory_detail_1&rnd=609227752">
 			<div class="backLink">イベントメモリーTOP</div>
 		</a>
-		<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http://125.6.169.35/idolmaster/mypage?l_frm=Memory_detail_2&rnd=731435016">
+		<a href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=/12008305/mypage?l_frm=Memory_detail_2&rnd=731435016">
 			<div class="backLink">マイスタジオ</div>
 		</a>
 		<script type="text/javascript">
