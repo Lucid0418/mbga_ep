@@ -1,7 +1,7 @@
 
 ![Image](https://lucid0418.github.io/mbga_ep/event/1914/img/logo_event.png)
 
-|||
+|No|스테이지|
 |--|--|
 |OP|<center>[오프닝](https://lucid0418.github.io/mbga_ep/event/1914/00)</center>|
 |1화|<center>[시부야·1](https://lucid0418.github.io/mbga_ep/event/1914/01)</center>|
