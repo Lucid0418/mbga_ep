@@ -1,5 +1,6 @@
 
 ![Image](https://lucid0418.github.io/mbga_ep/event/1914/img/logo_event.png)
+
 |||
 |--|--|
 |OP|<center>[오프닝](https://lucid0418.github.io/mbga_ep/event/1914/00)</center>|
