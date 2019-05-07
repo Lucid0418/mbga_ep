@@ -1,6 +1,5 @@
 
 ![Image](https://lucid0418.github.io/mbga_ep/event/1914/img/logo_event.png)
-
 |No|스테이지|
 |--|--|
 |OP|[오프닝](https://lucid0418.github.io/mbga_ep/event/1914/00)|
@@ -14,6 +13,8 @@
 |8화|[결전의 땅·2](#)|
 |ED|[엔딩](#)|
 
+2019년 4월 월말가챠 에피소드
 |||
 |--|--|
 |반짝임의 모멘트|[전편](https://lucid0418.github.io/mbga_ep/episode/51078468)|
+|반짝임의 모멘트|[후편](https://lucid0418.github.io/mbga_ep/episode/51078469)|
