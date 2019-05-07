@@ -14,16 +14,12 @@
 |8화|[결전의 땅·2](#)|
 |ED|[엔딩](#)|
 
-2019년 4월 월말가챠 에피소드
+|2019년 4월 월말가챠 에피소드|
+|--|
+|[반짝임의 모멘트 전편](https://lucid0418.github.io/mbga_ep/episode/51078468)|
+|[반짝임의 모멘트 후편](https://lucid0418.github.io/mbga_ep/episode/51078469)|
 
-|||
-|--|--|
-|반짝임의 모멘트|[전편](https://lucid0418.github.io/mbga_ep/episode/51078468)|
-|반짝임의 모멘트|[후편](https://lucid0418.github.io/mbga_ep/episode/51078469)|
-
-기타 이벤트 에피소드
-
-||
+|기타 이벤트 에피소드|
 |--|
 |[2018년 크리스마스](https://lucid0418.github.io/mbga_ep/etc/2018xmas/101/index1.html)|
 |[2019년 발렌타인데이](https://lucid0418.github.io/mbga_ep/etc/2019valentine/101)|
