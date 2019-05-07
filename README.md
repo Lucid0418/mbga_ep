@@ -20,3 +20,11 @@
 |--|--|
 |반짝임의 모멘트|[전편](https://lucid0418.github.io/mbga_ep/episode/51078468)|
 |반짝임의 모멘트|[후편](https://lucid0418.github.io/mbga_ep/episode/51078469)|
+
+기타 이벤트 에피소드
+
+||
+|--|
+|[2018년 크리스마스](https://lucid0418.github.io/mbga_ep/etc/2018xmas/101/index1.html)|
+|[2019년 발렌타인데이](https://lucid0418.github.io/mbga_ep/etc/2019valentine/101)|
+|[2019년 화이트데이](https://lucid0418.github.io/mbga_ep/etc/2019whiteday/101)|
