@@ -11,9 +11,9 @@
 |후반개시|[대기실](https://lucid0418.github.io/mbga_ep/event/1914/04_5)|
 |5화|[이케부쿠로·1](https://lucid0418.github.io/mbga_ep/event/1914/05)|
 |6화|[이케부쿠로·2](https://lucid0418.github.io/mbga_ep/event/1914/06)|
-|7화|[결전의 땅·1](#)|
-|8화|[결전의 땅·2](#)|
-|ED|[엔딩](#)|
+|7화|[결전의 땅·1](https://lucid0418.github.io/mbga_ep/event/1914/07)|
+|8화|[결전의 땅·2](https://lucid0418.github.io/mbga_ep/event/1914/08)|
+|ED|[엔딩](https://lucid0418.github.io/mbga_ep/event/1914/09)|
 
 |2019년 4월 월말가챠 에피소드|
 |--|
